@@ -50,7 +50,7 @@ spec:
           - name: "PICK_STRATEGY"
             value: "RANDOM"
           - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
-            value: "424c14d1-1bff-4451-9985-6a800ad9762f"
+            value: "0df9862a-9167-45c1-8a93-4ad02ede55a4"
           - name: "FF_BETS"
             value: "1"
         livenessProbe:
