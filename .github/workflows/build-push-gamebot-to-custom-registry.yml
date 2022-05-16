@@ -35,7 +35,3 @@ jobs:
     - name: build and push    
       run: |
         az acr build --image "gamebot:latest" --registry t9xtacrbbe292 --file Dockerfile .
-    
-    - name: restart gamebot
-      run: |
-        kubectl rollout restart deploy gamebot
