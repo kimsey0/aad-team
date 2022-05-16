@@ -50,3 +50,9 @@ spec:
             value: "424c14d1-1bff-4451-9985-6a800ad9762f"
           - name: "FF_BETS"
             value: "1"
+        livenessProbe:
+          exec:
+            httpGet:
+              path: /health
+              port: 8080
+              
