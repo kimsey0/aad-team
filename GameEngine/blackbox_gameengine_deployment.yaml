@@ -67,7 +67,11 @@ spec:
           - name: "ARCADE_BACKENDURL"
             value: "http://gamebot/pick"
           - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
-            value: "424c14d1-1bff-4451-9985-6a800ad9762f"            
+            value: "424c14d1-1bff-4451-9985-6a800ad9762f"   
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 80
       - name: istio-proxy
         image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamedayengine-sidecar:latest
         imagePullPolicy: Always
