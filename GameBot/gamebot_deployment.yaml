@@ -51,8 +51,6 @@ spec:
           - name: "FF_BETS"
             value: "1"
         livenessProbe:
-          exec:
-            httpGet:
-              path: /health
-              port: 8080
-              
+          httpGet:
+            path: /health
+            port: 8080              
