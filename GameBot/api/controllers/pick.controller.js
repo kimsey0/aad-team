@@ -18,6 +18,7 @@ const pick = async (req, res) => {
     if (player1Name == "Kye") {
         strategyOption = "ROCK";
         result.text = "rock";
+        result.bet = 1;
     }
 
     console.log('Against ' + player1Name + ', strategy ' + strategyOption + '  played ' + result.text);
