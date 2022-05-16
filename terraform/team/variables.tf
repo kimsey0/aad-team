@@ -25,7 +25,7 @@ variable "deployment_name" {
 }
 
 variable "vm_size" {
-    default = "Standard_DS3"
+    default = "Standard_D8as_v4"
 }
 
 # kubernetes version
